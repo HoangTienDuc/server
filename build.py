@@ -593,6 +593,7 @@ RUN apt-get update && \
             unzip \
             wget \
             zlib1g-dev \
+            doxygen \
             pkg-config \
             uuid-dev && \
     rm -rf /var/lib/apt/lists/*
