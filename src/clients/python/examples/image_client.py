@@ -326,8 +326,8 @@ if __name__ == '__main__':
                         'The flag is only available with gRPC protocol.')
     parser.add_argument('-m',
                         '--model-name',
+                        default='inception_graphdef',
                         type=str,
-                        required=True,
                         help='Name of model')
     parser.add_argument(
         '-x',
@@ -372,7 +372,7 @@ if __name__ == '__main__':
     parser.add_argument('image_filename',
                         type=str,
                         nargs='?',
-                        default=None,
+                        default='1.png',
                         help='Input image / Input folder.')
     FLAGS = parser.parse_args()
 
